@@ -20,10 +20,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ModifierFactory.cpp" />
+    <ClCompile Include="src\Modifiers\RandomBonusModifier.cpp" />
+    <ClCompile Include="src\Modifiers\SquareScoreModifier.cpp" />
     <ClCompile Include="src\RunSession.cpp" />
+    <ClCompile Include="src\ScoringSystem.cpp" />
+    <ClCompile Include="src\ShopSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\IModifier.h" />
+    <ClInclude Include="src\ModifierFactory.h" />
+    <ClInclude Include="src\Modifiers\RandomBonusModifier.h" />
+    <ClInclude Include="src\Modifiers\SquareScoreModifier.h" />
     <ClInclude Include="src\RunSession.h" />
+    <ClInclude Include="src\ScoringSystem.h" />
+    <ClInclude Include="src\ShopSystem.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

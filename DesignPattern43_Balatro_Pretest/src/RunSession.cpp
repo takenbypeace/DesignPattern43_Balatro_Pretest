@@ -39,12 +39,19 @@ void RunSession::PlayHand()
 
 void RunSession::CalculateScore()
 {
-  std::cout << "Menghitung skor..." << std::endl;
+  // 1. Kita minta skor dasar (50) dari ScoringSystem
+  int baseScore = scoring.CalculateBaseScore();
+
+  // 2. Kita tambahkan skor tersebut ke total skor pemain
+  totalScore = totalScore + baseScore;
+
+  std::cout << "Mendapatkan skor: " << baseScore << std::endl;
+  std::cout << "Total Skor sekarang: " << totalScore << std::endl;
 }
 
 void RunSession::EnterShop()
 {
-  std::cout << "Masuk ke toko (Shop)..." << std::endl;
+  shop.EnterShop();
 }
 
 void RunSession::EndRun()

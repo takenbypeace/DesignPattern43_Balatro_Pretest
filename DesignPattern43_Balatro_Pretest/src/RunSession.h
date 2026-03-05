@@ -1,12 +1,15 @@
 #pragma once
 #include <iostream>
+#include "ScoringSystem.h"
+#include "ShopSystem.h"
 
 class RunSession {
 private:
   int currentRound;
   int totalScore;
 
-  // Nanti kita akan memanggil kelas ScoringSystem dan ShopSystem di sini
+  ScoringSystem scoring;
+  ShopSystem shop;
 
 public:
   RunSession(); // Constructor untuk menyiapkan nilai awal saat game mulai
