@@ -36,6 +36,9 @@
     <ClCompile Include="src\Modifiers\RandomBonusModifier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RunSession.h">
@@ -50,13 +53,16 @@
     <ClInclude Include="src\ModifierFactory.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\IModifier.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Modifiers\SquareScoreModifier.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Modifiers\RandomBonusModifier.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Modifiers\IModifier.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

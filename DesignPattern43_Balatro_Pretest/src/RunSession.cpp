@@ -18,15 +18,37 @@ void RunSession::RunLoop()
 {
   StartRun();
 
-  // Mengulang selama ronde masih kurang dari atau sama dengan 3
   while (currentRound <= 3) {
     std::cout << "\n--- Memulai Ronde " << currentRound << " ---" << std::endl;
 
-    PlayHand();
-    CalculateScore();
-    EnterShop();
+    // 1. Tentukan target skor tiap ronde
+    int targetScore = 0;
+    if (currentRound == 1)
+      targetScore = 40;
+    else if (currentRound == 2)
+      targetScore = 2000;
+    else if (currentRound == 3)
+      targetScore = 5000;
 
-    currentRound++; // Ini bagian yang sangat penting!
+    std::cout << "Target Skor ronde ini: " << targetScore << std::endl;
+
+    PlayHand();
+
+    // 2. Minta juri menilai, apakah tembus target?
+    bool isWin = CalculateScore(targetScore);
+
+    // 3. Jika juri bilang kalah (false), hentikan permainan!
+    if (isWin == false) {
+      std::cout << "\n=== GAME OVER ===" << std::endl;
+      break; // Perintah 'break' akan langsung menghancurkan putaran 'while'
+    }
+
+    // 4. Kalau menang dan belum ronde terakhir, silakan ke toko
+    if (currentRound < 3) {
+      EnterShop();
+    }
+
+    currentRound++;
   }
 
   EndRun();
@@ -34,24 +56,38 @@ void RunSession::RunLoop()
 
 void RunSession::PlayHand()
 {
-  std::cout << "Pemain memainkan kartu..." << std::endl;
+  int siap;
+  std::cout << "Tekan 1 lalu Enter untuk memainkan kartu: ";
+  std::cin >> siap; // Komputer akan "mengerem" di sini menunggu pemain!
+
+  std::cout << ">> Memainkan kartu..." << std::endl;
 }
 
-void RunSession::CalculateScore()
+bool RunSession::CalculateScore(int targetScore)
 {
-  // 1. Kita minta skor dasar (50) dari ScoringSystem
-  int baseScore = scoring.CalculateBaseScore();
-
-  // 2. Kita tambahkan skor tersebut ke total skor pemain
+  int baseScore = scoring.CalculateBaseScore(50, player);
   totalScore = totalScore + baseScore;
 
-  std::cout << "Mendapatkan skor: " << baseScore << std::endl;
-  std::cout << "Total Skor sekarang: " << totalScore << std::endl;
+  // Tampilkan skor dan bandingkan dengan target
+  std::cout << ">> Mendapatkan skor: " << baseScore << " / Target: " << targetScore << std::endl;
+  std::cout << ">> Total Skor sekarang: " << totalScore << std::endl;
+
+  // Cek kondisi menang atau kalah
+  if (baseScore >= targetScore) {
+    int hadiah = 15;
+    player.AddMoney(hadiah);
+    std::cout << ">> TARGET TERCAPAI! Kamu mendapat hadiah $" << hadiah << "\n" << std::endl;
+    return true; // Pemain menang, kembalikan 'true'
+  }
+  else {
+    std::cout << ">> TARGET GAGAL! Skormu tidak mencukupi.\n" << std::endl;
+    return false; // Pemain kalah, kembalikan 'false'
+  }
 }
 
 void RunSession::EnterShop()
 {
-  shop.EnterShop();
+  shop.EnterShop(player);
 }
 
 void RunSession::EndRun()

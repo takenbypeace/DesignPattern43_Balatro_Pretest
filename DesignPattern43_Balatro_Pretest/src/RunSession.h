@@ -2,12 +2,14 @@
 #include <iostream>
 #include "ScoringSystem.h"
 #include "ShopSystem.h"
+#include "Player.h"
 
 class RunSession {
 private:
   int currentRound;
   int totalScore;
 
+  Player player;
   ScoringSystem scoring;
   ShopSystem shop;
 
@@ -17,7 +19,9 @@ public:
   // Fungsi-fungsi ini secara langsung mewakili siklus permainan
   void StartRun();
   void PlayHand();
-  void CalculateScore();
+
+  bool CalculateScore(int targetScore);
+
   void EnterShop();
   void EndRun();
 
