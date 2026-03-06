@@ -3,6 +3,8 @@
 #include "ScoringSystem.h"
 #include "ShopSystem.h"
 #include "Player.h"
+#include "Deck.h"
+#include "HandEvaluator.h"
 
 class RunSession {
 private:
@@ -12,19 +14,17 @@ private:
   Player player;
   ScoringSystem scoring;
   ShopSystem shop;
+  Deck deck;
 
 public:
-  RunSession(); // Constructor untuk menyiapkan nilai awal saat game mulai
-
-  // Fungsi-fungsi ini secara langsung mewakili siklus permainan
+  RunSession();
   void StartRun();
-  void PlayHand();
 
-  bool CalculateScore(int targetScore);
+  std::vector<Card> PlayHand();
+
+  bool CalculateScore(int targetScore, std::vector<Card> playedCards);
 
   void EnterShop();
   void EndRun();
-
-  // Fungsi utama untuk mengatur perulangan ronde (Repeat)
   void RunLoop();
 };

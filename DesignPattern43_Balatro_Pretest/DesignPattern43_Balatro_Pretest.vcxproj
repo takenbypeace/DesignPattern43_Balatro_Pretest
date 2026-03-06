@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Card.cpp" />
+    <ClCompile Include="src\Deck.cpp" />
+    <ClCompile Include="src\HandEvaluator.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ModifierFactory.cpp" />
     <ClCompile Include="src\Modifiers\RandomBonusModifier.cpp" />
@@ -29,6 +32,9 @@
     <ClCompile Include="src\ShopSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Card.h" />
+    <ClInclude Include="src\Deck.h" />
+    <ClInclude Include="src\HandEvaluator.h" />
     <ClInclude Include="src\ModifierFactory.h" />
     <ClInclude Include="src\Modifiers\IModifier.h" />
     <ClInclude Include="src\Modifiers\RandomBonusModifier.h" />
