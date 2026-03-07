@@ -1,11 +1,11 @@
 #include "ModifierFactory.h"
-#include "modifiers/SquareScoreModifier.h"
+#include "modifiers/TripleScoreModifier.h"
 #include "modifiers/RandomBonusModifier.h"
 
 IModifier* ModifierFactory::CreateModifier(std::string modifierName)
 {
-  if (modifierName == "SquareScore") {
-    return new SquareScore();
+  if (modifierName == "TripleScore") {
+    return new TripleScoreModifier();
   }
   else if (modifierName == "RandomBonus") {
     return new RandomBonus();

@@ -46,10 +46,10 @@ void RunSession::RunLoop()
     }
 
     // Memilih kartu dan menyimpan nilai kartu yang dimainkan
-    int nilaiKartu = PlayHand();
+    std::vector<Card> kartuYangDimainkan = PlayHand();
 
     // 2. Minta juri menilai, apakah tembus target? (Sekarang pakai nilai kartu asli)
-    bool isWin = CalculateScore(targetScore, nilaiKartu);
+    bool isWin = CalculateScore(targetScore, kartuYangDimainkan);
 
     // Bersihkan kartu dari tangan pemain untuk ronde berikutnya
     player.ClearHand();

@@ -25,7 +25,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ModifierFactory.cpp" />
     <ClCompile Include="src\Modifiers\RandomBonusModifier.cpp" />
-    <ClCompile Include="src\Modifiers\SquareScoreModifier.cpp" />
+    <ClCompile Include="src\Modifiers\TripleScoreModifier.cpp" />
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\RunSession.cpp" />
     <ClCompile Include="src\ScoringSystem.cpp" />
@@ -38,7 +38,7 @@
     <ClInclude Include="src\ModifierFactory.h" />
     <ClInclude Include="src\Modifiers\IModifier.h" />
     <ClInclude Include="src\Modifiers\RandomBonusModifier.h" />
-    <ClInclude Include="src\Modifiers\SquareScoreModifier.h" />
+    <ClInclude Include="src\Modifiers\TripleScoreModifier.h" />
     <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\RunSession.h" />
     <ClInclude Include="src\ScoringSystem.h" />

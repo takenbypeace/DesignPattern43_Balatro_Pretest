@@ -15,7 +15,7 @@ void ShopSystem::EnterShop(Player& pembeli)
     std::cout << "\n--- ETALASE TOKO ---" << std::endl;
     std::cout << "Uangmu saat ini: $" << pembeli.GetMoney() << std::endl;
     std::cout << "1. Beli Random Bonus Modifier ($5)" << std::endl;
-    std::cout << "2. Beli Square Score Modifier ($10)" << std::endl;
+    std::cout << "2. Beli Triple Score Modifier ($10)" << std::endl;
     std::cout << "3. Keluar dari Toko (Lanjut Ronde Berikutnya)" << std::endl;
     std::cout << "Pilihanmu: ";
 
@@ -34,9 +34,9 @@ void ShopSystem::EnterShop(Player& pembeli)
     }
     else if (pilihan == 2) {
       if (pembeli.SpendMoney(10)) {
-        std::cout << ">> Transaksi Berhasil! Kamu mendapatkan Square Score." << std::endl;
+        std::cout << ">> Transaksi Berhasil! Kamu mendapatkan Triple Score." << std::endl;
         // Memesan kartu Square dan menyimpannya di wadahKartu
-        IModifier* wadahKartu = pabrik.CreateModifier("SquareScore");
+        IModifier* wadahKartu = pabrik.CreateModifier("TripleScore");
         pembeli.AddModifier(wadahKartu);
       }
       else {

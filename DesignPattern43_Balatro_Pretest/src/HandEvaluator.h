@@ -5,9 +5,9 @@
 
 // Paket informasi hasil penilaian juri
 struct HandInfo {
-  std::string name; // Nama Kombo (Pair, High Card, dll)
-  int chips;        // Skor awal kombo
-  int mult;         // Pengali awal kombo
+  std::string name = ""; // Nama Kombo (Pair, High Card, dll)
+  int chips = 0;         // Skor awal kombo
+  int mult = 0;          // Pengali awal kombo
 };
 
 class HandEvaluator {

@@ -30,7 +30,7 @@
     <ClCompile Include="src\ModifierFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Modifiers\SquareScoreModifier.cpp">
+    <ClCompile Include="src\Modifiers\TripleScoreModifier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Modifiers\RandomBonusModifier.cpp">
@@ -62,7 +62,7 @@
     <ClInclude Include="src\ModifierFactory.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Modifiers\SquareScoreModifier.h">
+    <ClInclude Include="src\Modifiers\TripleScoreModifier.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Modifiers\RandomBonusModifier.h">
