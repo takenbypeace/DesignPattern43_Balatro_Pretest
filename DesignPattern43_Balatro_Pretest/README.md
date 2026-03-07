@@ -1,5 +1,3 @@
-# Card-Run Game Prototype (Balatro-inspired)
-
 ## Architecture Overview
 * **`main.cpp`**: Titik masuk program yang menginisiasi permainan.
 * **`RunSession`**: Mengatur *game loop* utama hingga masuk ke toko. 
@@ -23,3 +21,4 @@
 ## AI Usage Disclosure
 * Semua pembuatan *code* dibantu oleh AI.
 * AI juga membantu menjelaskan *code-code* yang tidak saya mengerti untuk menjawab pertanyaan-pertanyaan pada *pre-test*.
+* Membantu merapihkan format README.md
