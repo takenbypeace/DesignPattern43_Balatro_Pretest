@@ -1,0 +1,133 @@
+=== Memulai Run Baru ===
+Skor Awal: 0
+
+--- Memulai Ronde 1 ---
+Target Skor ronde ini: 10
+Uangmu saat ini: $10
+
+--- Kartu di Tanganmu ---
+1. 2 of Clubs (Nilai: 2)
+2. Jack of Hearts (Nilai: 10)
+3. 4 of Diamonds (Nilai: 4)
+4. 5 of Spades (Nilai: 5)
+5. 10 of Spades (Nilai: 10)
+
+Pilih nomor kartu (pisahkan dengan spasi, maks 5). Contoh: 1 3 4
+Pilihanmu: 5 4
+
+>> Kamu memainkan 2 kartu!
+
+=== HASIL JURI ===
+Kombo: High Card!
+Hitungan: (5 Chips Kombo + 15 Chips Kartu) x 1 Mult
+>> Mendapatkan skor: 20 / Target: 10
+>> Total Skor sekarang: 20
+>> TARGET TERCAPAI! Kamu mendapat hadiah $15
+
+
+=== MEMASUKI TOKO MODIFIER ===
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $25
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 2
+>> Transaksi Berhasil! Kamu mendapatkan Triple Score.
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $15
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 2
+>> Transaksi Berhasil! Kamu mendapatkan Triple Score.
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $5
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 3
+>> Kamu meninggalkan toko...
+
+--- Memulai Ronde 2 ---
+Target Skor ronde ini: 100
+Uangmu saat ini: $5
+
+--- Kartu di Tanganmu ---
+1. King of Spades (Nilai: 10)
+2. Ace of Clubs (Nilai: 11)
+3. King of Clubs (Nilai: 10)
+4. Queen of Spades (Nilai: 10)
+5. 10 of Diamonds (Nilai: 10)
+
+Pilih nomor kartu (pisahkan dengan spasi, maks 5). Contoh: 1 3 4
+Pilihanmu: 2 3
+
+>> Kamu memainkan 2 kartu!
+
+=== HASIL JURI ===
+Kombo: High Card!
+Hitungan: (5 Chips Kombo + 21 Chips Kartu) x 1 Mult
+>> Mendapatkan skor: 234 / Target: 100
+>> Total Skor sekarang: 254
+>> TARGET TERCAPAI! Kamu mendapat hadiah $15
+
+
+=== MEMASUKI TOKO MODIFIER ===
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $20
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 2
+>> Transaksi Berhasil! Kamu mendapatkan Triple Score.
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $10
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 2
+>> Transaksi Berhasil! Kamu mendapatkan Triple Score.
+
+--- ETALASE TOKO ---
+Uangmu saat ini: $0
+1. Beli Random Bonus Modifier ($5)
+2. Beli Triple Score Modifier ($10)
+3. Keluar dari Toko (Lanjut Ronde Berikutnya)
+Pilihanmu: 3
+>> Kamu meninggalkan toko...
+
+--- Memulai Ronde 3 ---
+Target Skor ronde ini: 1000
+Uangmu saat ini: $0
+
+--- Kartu di Tanganmu ---
+1. 7 of Hearts (Nilai: 7)
+2. 10 of Clubs (Nilai: 10)
+3. 3 of Hearts (Nilai: 3)
+4. Ace of Diamonds (Nilai: 11)
+5. 6 of Diamonds (Nilai: 6)
+
+Pilih nomor kartu (pisahkan dengan spasi, maks 5). Contoh: 1 3 4
+Pilihanmu: 2 4 1
+
+>> Kamu memainkan 3 kartu!
+
+=== HASIL JURI ===
+Kombo: High Card!
+Hitungan: (5 Chips Kombo + 28 Chips Kartu) x 1 Mult
+>> Mendapatkan skor: 2673 / Target: 1000
+>> Total Skor sekarang: 2927
+>> TARGET TERCAPAI! Kamu mendapat hadiah $15
+
+
+=== Run Selesai ===
+Skor Akhir: 2927
+
+C:\Users\LOQ\Source\Repos\DesignPattern43_Balatro_Pretest\x64\Debug\DesignPattern43_Balatro_Pretest.exe (process 27472) exited with code 0 (0x0).
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .

@@ -1,7 +1,7 @@
 #include "RandomBonusModifier.h"
 #include <cstdlib> // Wajib ditambahkan untuk menggunakan rand()
 
-int RandomBonus::ApplyModifier(int currentScore)
+long long RandomBonus::ApplyModifier(long long currentScore)
 {
   // Menghasilkan angka bonus acak antara 1 sampai 20
   int bonus = rand() % 20 + 1;

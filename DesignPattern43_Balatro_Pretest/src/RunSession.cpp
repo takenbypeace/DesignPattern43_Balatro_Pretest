@@ -15,7 +15,7 @@ void RunSession::StartRun()
   std::cout << "\n=== Memulai Run Baru ===" << std::endl;
   std::cout << "Skor Awal: " << totalScore << std::endl;
 
-  // Siapkan 52 kartu dan kocok sebelum main!
+  // Siapkan 52 kartu dan kocok sebelum main
   deck.InitializeDeck();
   deck.Shuffle();
 }

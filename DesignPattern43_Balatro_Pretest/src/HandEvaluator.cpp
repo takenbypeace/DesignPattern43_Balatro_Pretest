@@ -29,14 +29,14 @@ HandInfo HandEvaluator::EvaluateHand(std::vector<Card> playedCards)
     }
   }
 
-  // === 4. VONIS KOMBO (Diurutkan dari yang Paling Kuat!) ===
+  // === 4. VONIS KOMBO (Diurutkan dari yang Paling Kuat) ===
   if (quads == 1) {
     result.name = "Four of a Kind";
     result.chips = 60;
     result.mult = 7;
   }
   else if (triples == 1 && pairs >= 1) {
-    // Punya kembar 3 DAN kembar 2 di saat bersamaan = Full House!
+    // Punya kembar 3 DAN kembar 2 di saat bersamaan = Full House
     result.name = "Full House";
     result.chips = 40;
     result.mult = 4;
@@ -47,7 +47,6 @@ HandInfo HandEvaluator::EvaluateHand(std::vector<Card> playedCards)
     result.mult = 3;
   }
   else if (pairs == 2) {
-    // Punya DUA kelompok kembar 2 = Two Pair!
     result.name = "Two Pair";
     result.chips = 20;
     result.mult = 2;

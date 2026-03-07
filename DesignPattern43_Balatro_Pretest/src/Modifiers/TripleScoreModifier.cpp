@@ -1,6 +1,6 @@
 #include "TripleScoreModifier.h"
 
-int TripleScoreModifier::ApplyModifier(int currentScore)
+long long TripleScoreModifier::ApplyModifier(long long currentScore)
 {
-  return currentScore * 3; // Jauh lebih aman dan seimbang!
+  return currentScore * 3; // Jauh lebih aman dan seimbang
 }

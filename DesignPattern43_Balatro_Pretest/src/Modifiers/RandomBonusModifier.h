@@ -3,5 +3,5 @@
 
 class RandomBonus : public IModifier {
 public:
-  int ApplyModifier(int currentScore) override;
+  long long ApplyModifier(long long currentScore) override;
 };

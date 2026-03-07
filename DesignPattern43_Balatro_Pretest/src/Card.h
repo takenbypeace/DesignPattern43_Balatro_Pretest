@@ -3,10 +3,10 @@
 
 // Kumpulan lambang kartu (Suit)
 enum class Suit {
-  Hearts,   // Hati
-  Diamonds, // Wajik
-  Clubs,    // Keriting
-  Spades    // Sekop
+  Hearts,
+  Diamonds,
+  Clubs,
+  Spades
 };
 
 // Kumpulan angka/wajah kartu (Rank) dengan identitas unik
